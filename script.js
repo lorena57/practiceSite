@@ -1,9 +1,9 @@
 'use strict';
 
-setTimeout(greeting, 1000);
+setTimeout(greeting, 3000);
 
 function greeting() {
-  document.getElementById('testing').innerHTML = 'Ready for a change';
+  document.getElementById('testing').textContent = 'Ready for a change';
 }
 
 console.log('Test');
