@@ -1,3 +1,5 @@
+@import url('https://css.gg/chevron-double-down.css');
+
 .bg {
   background: url('images/change.jpg');
   background-position: center center;
@@ -5,6 +7,32 @@
   background-size: cover;
   width: calc(100vw + 60px);
   height: calc(100vh + 60px);
+}
 
-  opacity: 0.7;
+.gg-chevron-double-down {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 522px;
+  height: 522px;
+}
+
+.gg-chevron-double-down::after,
+.gg-chevron-double-down::before {
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  left: 7px;
+  top: 3px;
+}
+
+.gg-chevron-double-down::after {
+  top: 8px;
 }
